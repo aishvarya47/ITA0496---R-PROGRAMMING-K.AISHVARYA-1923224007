@@ -1,0 +1,6 @@
+vec <- c(10, 25, 38, 49, 15, 67, 89, 2)
+max_val <- max(vec)
+min_val <- min(vec)
+cat("\nGiven Vector:", vec, "\n")
+cat("Maximum Value:", max_val, "\n")
+cat("Minimum Value:", min_val, "\n")
