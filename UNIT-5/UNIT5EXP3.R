@@ -1,0 +1,6 @@
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(lattice)
+df <- diamonds %>% count(cut)
+ggplot(df, aes(x = "", y = n, fill = cut)) + geom_bar(stat = "identity", width = 1) + coord_polar(theta = "y")
