@@ -1,0 +1,5 @@
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(lattice)
+ggplot(iris, aes(Sepal.Length)) + geom_histogram(binwidth = 0.5, fill = "blue", color = "black")
