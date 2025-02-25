@@ -1,0 +1,5 @@
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(lattice)
+plot_ly(mtcars, x = ~hp, y = ~mpg, type = 'scatter', mode = 'markers')
