@@ -1,0 +1,5 @@
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(lattice)
+splom(iris[, 1:4], groups = iris$Species)
