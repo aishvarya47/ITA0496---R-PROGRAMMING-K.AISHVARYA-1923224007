@@ -1,0 +1,6 @@
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(lattice)
+air_data <- data.frame(time = time(AirPassengers), passengers = as.numeric(AirPassengers))
+ggplot(air_data, aes(x = time, y = passengers)) + geom_line()
