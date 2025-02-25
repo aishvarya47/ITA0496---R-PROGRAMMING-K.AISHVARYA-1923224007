@@ -1,0 +1,5 @@
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(lattice)
+ggplot(mtcars, aes(wt, mpg, color = factor(cyl), label = rownames(mtcars))) + geom_point() + geom_text(vjust = -0.5)
